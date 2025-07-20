@@ -23,7 +23,7 @@ export const signToken = (id: string): string => {
 
 export const signAccessToken = (id: string, name: string): string => {
   return jwt.sign({ id, name }, config.JWT_SECRET, {
-    expiresIn: '10s',
+    expiresIn: '1d',
   });
 };
 
